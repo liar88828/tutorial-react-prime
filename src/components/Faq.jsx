@@ -41,7 +41,7 @@ const Section = styled.section`
       &:nth-of-type(2) {
         border-top: 0.01rem solid #636e6e;
         border-bottom: 0.01rem solid #636e6e;
-	      padding:0.8rem 0;
+        padding: 0.8rem 0;
       }
 
 
@@ -59,8 +59,8 @@ function Faq() {
 		</div>
 		<div className="faqs">
 			{faqs.map((faq) => (
-					<div className={'faq'}>
-						<div className="info">
+					<div className={'faq'} key={faq.id}>
+						<div className="info" >
 							{faq.icon}
 							<h4>{faq.text}</h4>
 						</div>
@@ -76,15 +76,19 @@ export default Faq;
 
 const faqs = [
 	{
+		id: 1,
 		icon: <AiFillCalendar/>,
 		text: 'Baghdad sandra unix fed . '
 	},
 	{
+		id: 2,
 		icon: <MdTimelapse/>,
 		text: 'Pocket felt ambassador tournament gadgets rational bulk, calendar commitments contain savage altered diego systematic.'
 	},
 	{
-		icon: <IoMdCash/>, text: 'Trash tracy woods pix jungle listing. '
+		id: 43,
+		icon: <IoMdCash/>,
+		text: 'Trash tracy woods pix jungle listing. '
 	},
 
 
