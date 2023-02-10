@@ -6,6 +6,7 @@ import './style/style.css'
 import styled from "styled-components";
 const Div = styled.div`
   position: relative;
+  //background: white;
 `;
 
 function App() {

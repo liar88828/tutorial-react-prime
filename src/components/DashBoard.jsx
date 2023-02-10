@@ -16,7 +16,7 @@ export const DashBoard = () => {
 						<Analytic/>
 						<Faq/>
 					</div>
-					<div className="row__tow">
+					<div className="row__two">
 						<Earning/>
 						<Transfer/>
 						<Profile/>
