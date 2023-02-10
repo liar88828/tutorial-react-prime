@@ -26,7 +26,7 @@ const Section = styled.section`
 
     .transaction {
       display: flex;
-	    
+
       justify-content: space-between;
       align-items: center;
 
@@ -60,13 +60,36 @@ const Section = styled.section`
         }
 
         span {
-
+          color: #ffc107;
         }
       }
     }
 
   }
-}
+
+
+  .view {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-decoration: none;
+    color: #ffc107;
+    font-weight: bold;
+    margin-top: 1rem;
+    gap: 0.5rem;
+
+    svg {
+      transition: 0.3s ease-in-out;
+      font-size: 1.4rem;
+    }
+
+    &:hover {
+      svg {
+        transform: translateX(0.5rem);
+      }
+    }
+  }
 
 
 `
